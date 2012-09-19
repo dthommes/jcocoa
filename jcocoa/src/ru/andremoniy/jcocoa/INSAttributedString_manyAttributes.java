@@ -1,12 +1,7 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
-import ns.NSRangeEntries;
-import static ns.NSRangeEntries.*;
-import ns.INSRangeEntries;
-import static ns.INSRangeEntries.*;
+import ru.andremoniy.jcocoa.*;
 
-import ns.NSAttributedString;
 
 public abstract class INSAttributedString_manyAttributes extends NSAttributedString {
 

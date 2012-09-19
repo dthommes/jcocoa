@@ -1,12 +1,6 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
-import ns.NSAffineTransform;
-import static ns.NSAffineTransform.*;
-import ns.INSAffineTransform;
-import static ns.INSAffineTransform.*;
-
-import ns.NSObject;
+import ru.andremoniy.jcocoa.*;
 
 public abstract class INSAffineTransform extends NSObject {
 

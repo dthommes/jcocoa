@@ -1,6 +1,4 @@
-package ru.andremoniy.cocoa;
-
-import ru.andremoniy.cocoa.*;
+package ru.andremoniy.jcocoa;
 
 public abstract class INSAlert {
 }

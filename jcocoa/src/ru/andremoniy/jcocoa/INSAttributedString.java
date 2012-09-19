@@ -1,24 +1,6 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
-import ns.NSDictionary;
-import static ns.NSDictionary.*;
-import ns.INSDictionary;
-import static ns.INSDictionary.*;
-import ns.NSRange;
-import static ns.NSRange.*;
-import ns.INSRange;
-import static ns.INSRange.*;
-import ns.NSAttributedString;
-import static ns.NSAttributedString.*;
-import ns.INSAttributedString;
-import static ns.INSAttributedString.*;
-import ns.NSMutableString;
-import static ns.NSMutableString.*;
-import ns.INSMutableString;
-import static ns.INSMutableString.*;
-
-import ns.NSObject;
+import ru.andremoniy.jcocoa.*;
 
 public abstract class INSAttributedString extends NSObject {
 	public String string() { return null;

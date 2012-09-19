@@ -1,12 +1,4 @@
-package ru.andremoniy.cocoa;
-
-import ru.andremoniy.cocoa.*;
-import ns.NSDictionary;
-import static ns.NSDictionary.*;
-import ns.INSDictionary;
-import static ns.INSDictionary.*;
-
-import ns.NSAttributedString;
+package ru.andremoniy.jcocoa;
 
 public abstract class INSAttributedString_oneAttribute extends NSAttributedString {
 

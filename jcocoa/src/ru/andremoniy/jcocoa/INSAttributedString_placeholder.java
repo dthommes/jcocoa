@@ -1,8 +1,4 @@
-package ru.andremoniy.cocoa;
-
-import ru.andremoniy.cocoa.*;
-
-import ns.NSAttributedString;
+package ru.andremoniy.jcocoa;
 
 public abstract class INSAttributedString_placeholder extends NSAttributedString {
 }
