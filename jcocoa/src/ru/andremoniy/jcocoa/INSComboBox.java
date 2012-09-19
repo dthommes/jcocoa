@@ -1,0 +1,85 @@
+package ru.andremoniy.cocoa;
+
+import ru.andremoniy.cocoa.*;
+import ns.NSArray;
+import static ns.NSArray.*;
+import ns.INSArray;
+import static ns.INSArray.*;
+
+import ns.NSTextField;
+
+public abstract class INSComboBox extends NSTextField {
+
+	protected NSObject _dataSource;
+
+	public Boolean hasVerticalScroller() { return null;
+};
+	public void setHasVerticalScroller(Boolean flag) { return ;
+};
+	public NSSize intercellSpacing() { return null;
+};
+	public void setIntercellSpacing(NSSize aSize) { return ;
+};
+	public Double itemHeight() { return null;
+};
+	public void setItemHeight(Double itemHeight) { return ;
+};
+	public Integer numberOfVisibleItems() { return null;
+};
+	public void setNumberOfVisibleItems(Integer visibleItems) { return ;
+};
+	public void reloadData() { return ;
+};
+	public void noteNumberOfItemsChanged() { return ;
+};
+	public void setUsesDataSource(Boolean flag) { return ;
+};
+	public Boolean usesDataSource() { return null;
+};
+	public void scrollItemAtIndexToTop(Integer index) { return ;
+};
+	public void scrollItemAtIndexToVisible(Integer index) { return ;
+};
+	public void selectItemAtIndex(Integer index) { return ;
+};
+	public void deselectItemAtIndex(Integer index) { return ;
+};
+	public Integer indexOfSelectedItem() { return null;
+};
+	public Integer numberOfItems() { return null;
+};
+	public Boolean completes() { return null;
+};
+	public void setCompletes(Boolean completes) { return ;
+};
+	public NSObject delegate() { return null;
+};
+	public void setDelegate(NSObject anObject) { return ;
+};
+	public NSObject dataSource() { return null;
+};
+	public void setDataSource(NSObject aSource) { return ;
+};
+	public void addItemWithObjectValue(NSObject object) { return ;
+};
+	public void addItemsWithObjectValues(NSArray objects) { return ;
+};
+	public void insertItemWithObjectValue(NSObject object, Integer index) { return ;
+};
+	public void removeItemWithObjectValue(NSObject object) { return ;
+};
+	public void removeItemAtIndex(Integer index) { return ;
+};
+	public void removeAllItems() { return ;
+};
+	public void selectItemWithObjectValue(NSObject object) { return ;
+};
+	public NSObject itemObjectValueAtIndex(Integer index) { return null;
+};
+	public NSObject objectValueOfSelectedItem() { return null;
+};
+	public Integer indexOfItemWithObjectValue(NSObject object) { return null;
+};
+	public NSArray objectValues() { return null;
+};
+}

@@ -1,0 +1,68 @@
+package ru.andremoniy.cocoa;
+
+import ru.andremoniy.cocoa.*;
+import ns.NSData;
+import static ns.NSData.*;
+import ns.INSData;
+import static ns.INSData.*;
+import ns.NSArray;
+import static ns.NSArray.*;
+import ns.INSArray;
+import static ns.INSArray.*;
+import ns.NSFileHandle;
+import static ns.NSFileHandle.*;
+import ns.INSFileHandle;
+import static ns.INSFileHandle.*;
+
+import ns.NSObject;
+
+public abstract class INSFileHandle extends NSObject {
+	public NSData availableData() { return null;
+};
+	public NSData readDataToEndOfFile() { return null;
+};
+	public NSData readDataOfLength(Integer length) { return null;
+};
+	public void writeData(NSData data) { return ;
+};
+	public long offsetInFile() { return null;
+};
+	public long seekToEndOfFile() { return null;
+};
+	public void seekToFileOffset(long offset) { return ;
+};
+	public void truncateFileAtOffset(long offset) { return ;
+};
+	public void synchronizeFile() { return ;
+};
+	public void closeFile() { return ;
+};
+	public void readInBackgroundAndNotifyForModes(NSArray modes) { return ;
+};
+	public void readInBackgroundAndNotify() { return ;
+};
+	public void readToEndOfFileInBackgroundAndNotifyForModes(NSArray modes) { return ;
+};
+	public void readToEndOfFileInBackgroundAndNotify() { return ;
+};
+	public void acceptConnectionInBackgroundAndNotifyForModes(NSArray modes) { return ;
+};
+	public void acceptConnectionInBackgroundAndNotify() { return ;
+};
+	public void waitForDataInBackgroundAndNotifyForModes(NSArray modes) { return ;
+};
+	public void waitForDataInBackgroundAndNotify() { return ;
+};
+	public NSObject initWithFileDescriptor(int fd, Boolean closeopt) { return null;
+};
+	public NSObject initWithFileDescriptor(int fd) { return null;
+};
+	public int fileDescriptor() { return null;
+};
+	public NSFileHandle fileHandleForReading() { return null;
+};
+	public NSFileHandle fileHandleForWriting() { return null;
+};
+	public NSObject init() { return null;
+};
+}

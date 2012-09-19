@@ -1,0 +1,52 @@
+package ru.andremoniy.cocoa;
+
+import ru.andremoniy.cocoa.*;
+import ns.NSMutableData;
+import static ns.NSMutableData.*;
+import ns.INSMutableData;
+import static ns.INSMutableData.*;
+
+public abstract class INSMutableDictionary {
+	public NSMutableData getHeaderBytes() { return null;
+};
+	public OBEXError addTargetHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+	public OBEXError addHTTPHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+	public OBEXError addBodyHeader(void inHeaderData, uint32_t inHeaderDataLength, Boolean isEndOfBody) { return null;
+};
+	public OBEXError addWhoHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+	public OBEXError addConnectionIDHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+	public OBEXError addApplicationParameterHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+	public OBEXError addByteSequenceHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+	public OBEXError addObjectClassHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+	public OBEXError addAuthorizationChallengeHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+	public OBEXError addAuthorizationResponseHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+	public OBEXError addTimeISOHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+	public OBEXError addTypeHeader(String type) { return null;
+};
+	public OBEXError addLengthHeader(uint32_t length) { return null;
+};
+	public OBEXError addTime4ByteHeader(uint32_t time4Byte) { return null;
+};
+	public OBEXError addCountHeader(uint32_t inCount) { return null;
+};
+	public OBEXError addDescriptionHeader(String inDescriptionString) { return null;
+};
+	public OBEXError addNameHeader(String inNameString) { return null;
+};
+	public OBEXError addUserDefinedHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+	public OBEXError addImageHandleHeader(String type) { return null;
+};
+	public OBEXError addImageDescriptorHeader(void inHeaderData, uint32_t inHeaderDataLength) { return null;
+};
+}
