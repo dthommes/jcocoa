@@ -1,12 +1,7 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
-import ns.NSColor;
-import static ns.NSColor.*;
-import ns.INSColor;
-import static ns.INSColor.*;
+import ru.andremoniy.jcocoa.*;
 
-import ns.NSBrowserCell;
 
 public abstract class INSBrowserCellColorList extends NSBrowserCell {
 

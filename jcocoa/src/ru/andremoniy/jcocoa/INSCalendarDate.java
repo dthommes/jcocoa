@@ -1,16 +1,6 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
-import ns.NSTimeZone;
-import static ns.NSTimeZone.*;
-import ns.INSTimeZone;
-import static ns.INSTimeZone.*;
-import ns.NSCalendarDate;
-import static ns.NSCalendarDate.*;
-import ns.INSCalendarDate;
-import static ns.INSCalendarDate.*;
-
-import ns.NSDate;
+import ru.andremoniy.jcocoa.*
 
 public abstract class INSCalendarDate extends NSDate {
 

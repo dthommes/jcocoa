@@ -1,20 +1,7 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
-import ns.NSView;
-import static ns.NSView.*;
-import ns.INSView;
-import static ns.INSView.*;
-import ns.NSColor;
-import static ns.NSColor.*;
-import ns.INSColor;
-import static ns.INSColor.*;
-import ns.NSImage;
-import static ns.NSImage.*;
-import ns.INSImage;
-import static ns.INSImage.*;
+import ru.andremoniy.jcocoa.*;
 
-import ns.NSCell;
 
 public abstract class INSBrowserCell extends NSCell {
 	public NSColor highlightColorInView(NSView controlView) { return null;

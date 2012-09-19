@@ -1,12 +1,5 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
-import ns.NSSocket;
-import static ns.NSSocket.*;
-import ns.INSSocket;
-import static ns.INSSocket.*;
-
-import ns.NSSelectInputSource;
 
 public abstract class INSCancelInputSource_posix extends NSSelectInputSource {
 

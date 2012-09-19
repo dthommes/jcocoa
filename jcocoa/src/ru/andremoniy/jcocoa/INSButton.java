@@ -1,24 +1,7 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
-import ns.NSImage;
-import static ns.NSImage.*;
-import ns.INSImage;
-import static ns.INSImage.*;
-import ns.NSEvent;
-import static ns.NSEvent.*;
-import ns.INSEvent;
-import static ns.INSEvent.*;
-import ns.NSAttributedString;
-import static ns.NSAttributedString.*;
-import ns.INSAttributedString;
-import static ns.INSAttributedString.*;
-import ns.NSSound;
-import static ns.NSSound.*;
-import ns.INSSound;
-import static ns.INSSound.*;
+import ru.andremoniy.jcocoa.*;
 
-import ns.NSControl;
 
 public abstract class INSButton extends NSControl {
 	public String title() { return null;

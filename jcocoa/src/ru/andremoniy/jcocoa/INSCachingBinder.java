@@ -1,10 +1,5 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
-import ns.NSBinder;
-import static ns.NSBinder.*;
-import ns.INSBinder;
-import static ns.INSBinder.*;
 
 public abstract class I_NSCachingBinder extends _NSBinder {
 

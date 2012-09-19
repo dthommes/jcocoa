@@ -1,16 +1,7 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
-import ns.NSMutableDictionary;
-import static ns.NSMutableDictionary.*;
-import ns.INSMutableDictionary;
-import static ns.INSMutableDictionary.*;
-import ns.NSArray;
-import static ns.NSArray.*;
-import ns.INSArray;
-import static ns.INSArray.*;
+import ru.andremoniy.jcocoa.*;
 
-import ns.NSObject;
 
 public abstract class I_NSBinder extends NSObject {
 

@@ -1,12 +1,4 @@
-package ru.andremoniy.cocoa;
-
-import ru.andremoniy.cocoa.*;
-import ns.NSImage;
-import static ns.NSImage.*;
-import ns.INSImage;
-import static ns.INSImage.*;
-
-import ns.NSObject;
+package ru.andremoniy.jcocoa;
 
 public abstract class INSButtonImageSource extends NSObject {
 
