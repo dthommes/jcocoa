@@ -1,6 +1,6 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
+import ru.andremoniy.jcocoa.*;
 import ns.NSParentDeathMonitor_win32;
 import static ns.NSParentDeathMonitor_win32.*;
 import ns.INSParentDeathMonitor_win32;
