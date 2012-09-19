@@ -1,13 +1,13 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
+import ru.andremoniy.jcocoa.*;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
-import static ru.andremoniy.cocoa.MathEx.*;
-import static ru.andremoniy.cocoa.Utils.*;
-import static ru.andremoniy.cocoa.NSException.*;
-import static ru.andremoniy.cocoa.Constants.*;
+import static ru.andremoniy.jcocoa.MathEx.*;
+import static ru.andremoniy.jcocoa.Utils.*;
+import static ru.andremoniy.jcocoa.NSException.*;
+import static ru.andremoniy.jcocoa.Constants.*;
 
 
 public class NSInterfacePart extends INSInterfacePart {

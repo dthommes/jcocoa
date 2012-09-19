@@ -1,6 +1,6 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
+import ru.andremoniy.jcocoa.*;
 
 public abstract class INSTextCheckingResult {
 public static Integer NSTextCheckingTypeOrthography = 1ULL;

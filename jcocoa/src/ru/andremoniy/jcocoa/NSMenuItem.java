@@ -1,4 +1,4 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
 /**
  * User: Andremoniy

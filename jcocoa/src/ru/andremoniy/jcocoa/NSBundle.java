@@ -1,4 +1,4 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
 /**
  * User: Andremoniy
@@ -16,6 +16,10 @@ public class NSBundle {
     }
 
     public String bundlePath() {
+        throw new RuntimeException("not implemented");
+    }
+
+    public String localizedStringForKey(String key, String message, Object obj) {
         throw new RuntimeException("not implemented");
     }
 }

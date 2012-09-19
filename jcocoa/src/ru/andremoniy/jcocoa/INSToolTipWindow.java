@@ -1,6 +1,6 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
+import ru.andremoniy.jcocoa.*;
 import ns.NSTextField;
 import static ns.NSTextField.*;
 import ns.INSTextField;
