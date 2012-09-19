@@ -1,6 +1,6 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
+import ru.andremoniy.jcocoa.*;
 import ns.NSHandleMonitor_win32;
 import static ns.NSHandleMonitor_win32.*;
 import ns.INSHandleMonitor_win32;

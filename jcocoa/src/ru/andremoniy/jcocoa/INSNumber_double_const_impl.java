@@ -1,6 +1,6 @@
-package ru.andremoniy.cocoa;
+package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.cocoa.*;
+import ru.andremoniy.jcocoa.*;
 import ns.NSNumber_double_const;
 import static ns.NSNumber_double_const.*;
 import ns.INSNumber_double_const;
