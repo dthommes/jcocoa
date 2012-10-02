@@ -308,11 +308,16 @@ public class Utils {
         return (Boolean) obj1 || (Boolean) obj2;
     }
 
-    public static void setMultiple(Object obj, String fieldName, Object value) {
+    public static void _set(Object obj, String fieldName, Object value) {
+        // TODO:
+        throw new RuntimeException("not implemented");
+    }
+
+    public static void _setMultiple(Object obj, String fieldName, Object value) {
         setOperation2(obj, fieldName, value, MULTIPLY);
     }
 
-    public static void setDivide(Object obj, String fieldName, Object value) {
+    public static void _setDivide(Object obj, String fieldName, Object value) {
         setOperation2(obj, fieldName, value, DIVIDE);
     }
 

@@ -29,4 +29,8 @@ public class NSEvent extends NSObject {
     public short keyCode() {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSEvent mouseEventWithType(Integer type, Object locationInWindow, int i, Object o, Object windowNumber, NSGraphicsContext nsGraphicsContext, int i1, int i2, double v) {
+        throw new RuntimeException("not implemented");
+    }
 }
