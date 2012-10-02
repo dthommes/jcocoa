@@ -1,5 +1,7 @@
 package ru.andremoniy.jcocoa;
 
+import java.lang.reflect.Field;
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -8,6 +10,8 @@ import java.util.List;
  * Time: 9:45
  */
 public class Utils {
+
+    private RuntimeException runtimeException;
 
     public static boolean NSEqualRects(Object obj1, Object obj2) {
         throw new RuntimeException("not implemented");
@@ -161,6 +165,10 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
+    public static void _NSAssertBody(Boolean condition, String message, int a1, int a2, int a3, int a4, int a5) {
+        throw new RuntimeException("not implemented");
+    }
+
     public static enum NSBezierPathElementEnum {
         NSMoveToBezierPathElement,
         NSLineToBezierPathElement,
@@ -292,8 +300,85 @@ public class Utils {
         return (Boolean) obj1 && (Boolean) obj2;
     }
 
+    public static Integer _and(Object obj1, Object obj2) {
+        return (Integer) obj1 & (Integer) obj2;
+    }
+
     public static boolean _orOr(Object obj1, Object obj2) {
         return (Boolean) obj1 || (Boolean) obj2;
+    }
+
+    public static void setMultiple(Object obj, String fieldName, Object value) {
+        setOperation2(obj, fieldName, value, MULTIPLY);
+    }
+
+    public static void setDivide(Object obj, String fieldName, Object value) {
+        setOperation2(obj, fieldName, value, DIVIDE);
+    }
+
+    private static final int MULTIPLY = 0;
+    private static final int DIVIDE = 1;
+    private static final int PLUS = 2;
+    private static final int MINUS = 3;
+    private static final int PERCENT = 4;
+
+    public static void setOperation2(Object obj, String fieldName, Object value, int operation) {
+        try {
+            BigDecimal newValue = null;
+            if (value.getClass().equals(Integer.class)) {
+                newValue = new BigDecimal((Integer) value);
+            } else if (value.getClass().equals(Double.class)) {
+                newValue = new BigDecimal((Double) value);
+            } else if (value.getClass().equals(Float.class)) {
+                newValue = new BigDecimal((Float) value);
+            } else if (value.getClass().equals(Byte.class)) {
+                newValue = new BigDecimal((Byte) value);
+            } else if (value.getClass().equals(Long.class)) {
+                newValue = new BigDecimal((Long) value);
+            } else if (value.getClass().equals(Short.class)) {
+                newValue = new BigDecimal((Short) value);
+            }
+
+            Field field = obj.getClass().getDeclaredField(fieldName);
+            if (field.getType().equals(Integer.class)) {
+                BigDecimal oldValue = new BigDecimal(field.getInt(obj));
+                field.setInt(obj, doOperation(oldValue, newValue, operation).intValue());
+            } else if (field.getType().equals(Double.class)) {
+                BigDecimal oldValue = new BigDecimal(field.getDouble(obj));
+                field.setDouble(obj, doOperation(oldValue, newValue, operation).doubleValue());
+            } else if (field.getType().equals(Float.class)) {
+                BigDecimal oldValue = new BigDecimal(field.getFloat(obj));
+                field.setFloat(obj, doOperation(oldValue, newValue, operation).floatValue());
+            } else if (field.getType().equals(Byte.class)) {
+                BigDecimal oldValue = new BigDecimal(field.getByte(obj));
+                field.setByte(obj, doOperation(oldValue, newValue, operation).byteValue());
+            } else if (field.getType().equals(Long.class)) {
+                BigDecimal oldValue = new BigDecimal(field.getLong(obj));
+                field.setLong(obj, doOperation(oldValue, newValue, operation).longValue());
+            } else if (field.getType().equals(Short.class)) {
+                BigDecimal oldValue = new BigDecimal(field.getShort(obj));
+                field.setShort(obj, doOperation(oldValue, newValue, operation).shortValue());
+            }
+
+        } catch (ReflectiveOperationException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static BigDecimal doOperation(BigDecimal oldValue, BigDecimal newValue, int operation) {
+        switch (operation) {
+            case MULTIPLY:
+                return oldValue.multiply(newValue);
+            case DIVIDE:
+                return oldValue.divide(newValue);
+            case PLUS:
+                return oldValue.add(newValue);
+            case MINUS:
+                return oldValue.subtract(newValue);
+            case PERCENT:
+                return oldValue.remainder(newValue);
+        }
+        return oldValue;
     }
 
     public static String NSStringFromSize(NSSize size) {

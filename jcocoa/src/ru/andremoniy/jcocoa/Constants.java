@@ -16,6 +16,4 @@ public class Constants {
     public static NSEvent kUserEvent = new NSEvent(); // TODO:
     public static NSEvent kStateEvent = new NSEvent(); // TODO:
 
-    public static int NSCommandKeyMask = 0; // TOD:
-
 }
