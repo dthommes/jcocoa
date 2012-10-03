@@ -21,4 +21,8 @@ public class NSGraphicsContext {
     public static NSGraphicsContext currentContextDrawingToScreen() {
         throw new RuntimeException("not implemented");
     }
+
+    public void setImageInterpolation(int param) {
+        throw new RuntimeException("not implemented");
+    }
 }

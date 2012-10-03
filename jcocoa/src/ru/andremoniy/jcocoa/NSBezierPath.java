@@ -72,7 +72,7 @@ public class NSBezierPath {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSBezierPath bezierPathWithRect(NSRect rect) {
+    public static NSBezierPath bezierPathWithRect(Object rect) {
         throw new RuntimeException("not implemented");
     }
 

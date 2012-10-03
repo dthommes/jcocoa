@@ -17,11 +17,11 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static Double NSMinX(NSRect rect) {
+    public static Double NSMinX(Object rect) {
         throw new RuntimeException("not implemented");
     }
 
-    public static Double NSMinY(NSRect rect) {
+    public static Double NSMinY(Object rect) {
         throw new RuntimeException("not implemented");
     }
 
@@ -121,7 +121,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static boolean NSIsEmptyRect(NSRect rect) {
+    public static boolean NSIsEmptyRect(Object rect) {
         throw new RuntimeException("not implemented");
     }
 
@@ -145,7 +145,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static boolean NSPointInRect(NSPoint point, NSRect rect) {
+    public static boolean NSPointInRect(Object point, Object rect) {
         throw new RuntimeException("not implemented");
     }
 
@@ -222,6 +222,10 @@ public class Utils {
     }
 
     public static SEL _selector_(String name) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static SEL _protocol_(String name) {
         throw new RuntimeException("not implemented");
     }
 
@@ -306,6 +310,10 @@ public class Utils {
 
     public static boolean _orOr(Object obj1, Object obj2) {
         return (Boolean) obj1 || (Boolean) obj2;
+    }
+
+    public static Integer _or(Object obj1, Object obj2) {
+        return ((Number) obj1).intValue() | ((Number) obj2).intValue();
     }
 
     public static void _set(Object obj, String fieldName, Object value) {
