@@ -26,4 +26,8 @@ public class NSObject {
     public Object allocWithZone(NSZone zone) {
         throw new RuntimeException("not implemented");
     }
+
+    public NSObject retain() {
+        throw new RuntimeException("not implemented");
+    }
 }

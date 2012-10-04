@@ -65,6 +65,10 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
+    public static NSSize NSMakeSize(Object width, Object height) {
+        throw new RuntimeException("not implemented");
+    }
+
     public static NSPoint NSMakePoint(double x, double y) {
         throw new RuntimeException("not implemented");
     }
@@ -89,7 +93,7 @@ public class Utils {
         assert condition : msg;
     }
 
-    public static NSRect NSRectFromTwoPoints(NSPoint p1, NSPoint p2) {
+    public static NSRect NSRectFromTwoPoints(Object p1, Object p2) {
         throw new RuntimeException("not implemented");
     }
 
@@ -327,6 +331,14 @@ public class Utils {
 
     public static void _setDivide(Object obj, String fieldName, Object value) {
         setOperation2(obj, fieldName, value, DIVIDE);
+    }
+
+    public static void _setPlus(Object obj, String fieldName, Object value) {
+        setOperation2(obj, fieldName, value, PLUS);
+    }
+
+    public static void _setMinus(Object obj, String fieldName, Object value) {
+        setOperation2(obj, fieldName, value, MINUS);
     }
 
     private static final int MULTIPLY = 0;

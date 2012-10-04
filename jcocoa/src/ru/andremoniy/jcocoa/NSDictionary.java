@@ -25,4 +25,8 @@ public class NSDictionary extends NSObject {
     public static NSDictionary dictionaryWithObjectsAndKeys(Object ...objAndKeys) {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSDictionary dictionaryWithObjects(NSArray items, NSArray keys) {
+        throw new RuntimeException("not implemented");
+    }
 }

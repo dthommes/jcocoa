@@ -29,4 +29,12 @@ public class NSNumber extends NSObject {
     public static NSNumber numberWithInt(int i) {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSNumber numberWithUnsignedInteger(Integer anInteger) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSNumber numberWithDouble(double v) {
+        throw new RuntimeException("not implemented");
+    }
 }

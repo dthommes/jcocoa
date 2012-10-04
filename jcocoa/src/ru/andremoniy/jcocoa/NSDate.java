@@ -13,4 +13,16 @@ public class NSDate {
     public static NSDate distantFuture() {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSDate date() {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSDate dateWithNaturalLanguageString(Object stringValue) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSDate dateWithTimeIntervalSinceReferenceDate(Object floatValue) {
+        throw new RuntimeException("not implemented");
+    }
 }

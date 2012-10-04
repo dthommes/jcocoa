@@ -1,13 +1,13 @@
 package ru.andremoniy.jcocoa;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * User: Andremoniy
  * Date: 18.06.12
  * Time: 0:08
  */
-public abstract class NSArray extends ArrayList {
+public abstract class NSArray extends NSObject implements List {
 
     public abstract Object lastObject();
 

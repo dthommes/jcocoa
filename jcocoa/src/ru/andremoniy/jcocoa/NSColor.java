@@ -118,4 +118,8 @@ public class NSColor {
     public static NSColor colorWithDeviceRed(double v, double v1, double v2, double v3) {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSObject colorWithCalibratedWhite(Object floatValue, double v) {
+        throw new RuntimeException("not implemented");
+    }
 }

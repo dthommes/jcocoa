@@ -25,4 +25,16 @@ public class NSGraphicsContext {
     public void setImageInterpolation(int param) {
         throw new RuntimeException("not implemented");
     }
+
+    public Boolean isDrawingToScreen() {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static void setCurrentContext(NSGraphicsContext currentContext) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSGraphicsContext graphicsContextWithBitmapImageRep(NSBitmapImageRep rep) {
+        throw new RuntimeException("not implemented");
+    }
 }

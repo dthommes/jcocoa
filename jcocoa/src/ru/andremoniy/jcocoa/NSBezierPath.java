@@ -5,7 +5,7 @@ package ru.andremoniy.jcocoa;
  * Date: 17.06.12
  * Time: 23:54
  */
-public class NSBezierPath {
+public class NSBezierPath extends NSObject {
 
 
     public int length() {
