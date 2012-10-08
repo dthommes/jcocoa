@@ -30,4 +30,8 @@ public class NSObject {
     public NSObject retain() {
         throw new RuntimeException("not implemented");
     }
+
+    public static Class classForConversionRequestFor(Class clazz) {
+        throw new RuntimeException("not implemented");
+    }
 }

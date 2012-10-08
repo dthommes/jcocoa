@@ -18,6 +18,10 @@ public class NSNumber extends NSObject {
         throw new RuntimeException("not implemented");
     }
 
+    public static Object numberWithFloat(double value) {
+        throw new RuntimeException("not implemented");
+    }
+
     public static NSNumber numberWithBool(Boolean bool) {
         throw new RuntimeException("not implemented");
     }
