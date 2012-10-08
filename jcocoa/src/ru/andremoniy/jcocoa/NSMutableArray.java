@@ -85,8 +85,15 @@ public class NSMutableArray extends NSArray {
         throw new RuntimeException("not implemented");
     }
 
+    public static NSArray arrayWithArray(Object nsArray) {
+        throw new RuntimeException("not implemented");
+    }
+
     public static NSMutableArray arrayWithObject(NSObject event) {
         throw new RuntimeException("not implemented");
     }
 
+
 }
+
+

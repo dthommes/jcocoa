@@ -23,6 +23,10 @@ public class NSNotificationCenter {
         throw new RuntimeException("not implemented");
     }
 
+    public void removeObserver(Object observer, Object obj1, Object obj2) {
+        throw new RuntimeException("not implemented");
+    }
+
     public void addObserver(Object obj1, SEL sel, String str1, Object obj2) {
         throw new RuntimeException("not implemented");
     }

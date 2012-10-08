@@ -46,4 +46,11 @@ public abstract class NSArray extends NSObject implements List {
         throw new RuntimeException("not implemented");
     }
 
+    public static NSArray arrayWithObjects(Object ...objects) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSArray arrayWithObject(Object object) {
+        throw new RuntimeException("not implemented");
+    }
 }

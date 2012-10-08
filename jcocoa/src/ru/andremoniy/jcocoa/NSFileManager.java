@@ -14,6 +14,10 @@ public class NSFileManager {
         throw new RuntimeException("not implemented");
     }
 
+    public boolean fileExistsAtPath(String path, boolean isDir) {
+        throw new RuntimeException("not implemented");
+    }
+
     public NSData contentsAtPath(String path) {
         throw new RuntimeException("not implemented");
     }

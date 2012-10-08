@@ -29,11 +29,15 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
+    public static Double NSMidX(Object rect) {
+        throw new RuntimeException("not implemented");
+    }
+
     public static Double NSMaxX(NSRect rect) {
         throw new RuntimeException("not implemented");
     }
 
-    public static Double NSMidY(NSRect rect) {
+    public static Double NSMidY(Object rect) {
         throw new RuntimeException("not implemented");
     }
 
@@ -61,7 +65,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSSize NSMakeSize(double width, double height) {
+    private static NSSize NSMakeSize(double width, double height) {
         throw new RuntimeException("not implemented");
     }
 
@@ -70,6 +74,10 @@ public class Utils {
     }
 
     public static NSPoint NSMakePoint(double x, double y) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSPoint NSMakePoint(Object x, Object y) {
         throw new RuntimeException("not implemented");
     }
 
@@ -109,7 +117,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static boolean NSEqualSizes(NSSize size1, NSSize size2) {
+    public static boolean NSEqualSizes(Object size1, Object size2) {
         throw new RuntimeException("not implemented");
     }
 

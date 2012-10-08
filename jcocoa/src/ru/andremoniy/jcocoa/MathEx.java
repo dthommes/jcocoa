@@ -30,7 +30,7 @@ public class MathEx {
         return (Double) Math.atan(value);
     }
 
-    public static float AngleBetween2(NSPoint p1, NSPoint p2, NSPoint p3) {
+    public static double AngleBetween2(NSPoint p1, NSPoint p2, NSPoint p3) {
         throw new RuntimeException("not implemented");
     }
 
