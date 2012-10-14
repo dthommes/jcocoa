@@ -16,4 +16,8 @@ public class NSMenuItem {
     public void action() {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSMenuItem separatorItem() {
+        throw new RuntimeException("not implemented");
+    }
 }

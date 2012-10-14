@@ -167,4 +167,8 @@ public class NSBezierPath extends NSObject {
     public static NSBezierPath bezierPathWithOvalInRect(NSRect rect) {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSLayoutManager textOnPathLayoutManager() {
+        throw new RuntimeException("not implemented");
+    }
 }

@@ -37,4 +37,12 @@ public class NSCursor {
     public static NSCursor pointingHandCursor() {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSCursor currentCursor() {
+        throw new RuntimeException("not implemented");
+    }
+
+    public void push() {
+        throw new RuntimeException("not implemented");
+    }
 }

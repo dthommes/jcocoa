@@ -15,6 +15,10 @@ public class NSMutableArray extends NSArray {
         this.list = list;
     }
 
+    public NSMutableArray() {
+
+    }
+
     public Object lastObject() {
         return list.isEmpty() ? null : list.get(list.size() - 1);
     }

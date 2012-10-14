@@ -17,31 +17,31 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static Double NSMinX(Object rect) {
+    public static Number NSMinX(Object rect) {
         throw new RuntimeException("not implemented");
     }
 
-    public static Double NSMinY(Object rect) {
+    public static Number NSMinY(Object rect) {
         throw new RuntimeException("not implemented");
     }
 
-    public static Double NSMidX(NSRect rect) {
+    public static Number NSMidX(NSRect rect) {
         throw new RuntimeException("not implemented");
     }
 
-    public static Double NSMidX(Object rect) {
+    public static Number NSMidX(Object rect) {
         throw new RuntimeException("not implemented");
     }
 
-    public static Double NSMaxX(NSRect rect) {
+    public static Number NSMaxX(NSRect rect) {
         throw new RuntimeException("not implemented");
     }
 
-    public static Double NSMidY(Object rect) {
+    public static Number NSMidY(Object rect) {
         throw new RuntimeException("not implemented");
     }
 
-    public static Double NSMaxY(NSRect rect) {
+    public static Number NSMaxY(NSRect rect) {
         throw new RuntimeException("not implemented");
     }
 
@@ -89,7 +89,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static int LineLength(NSPoint point1, NSPoint point2) {
+    public static Integer LineLength(NSPoint point1, NSPoint point2) {
         throw new RuntimeException("not implemented");
     }
 
@@ -121,11 +121,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSRect NSMakeRect(float x1, float y1, float width, float height) {
-        throw new RuntimeException("not implemented");
-    }
-
-    public static NSRect NSMakeRect(double x1, double y1, double width, double height) {
+    public static NSRect NSMakeRect(Object x1, Object y1, Object width, Object height) {
         throw new RuntimeException("not implemented");
     }
 
@@ -255,7 +251,7 @@ public class Utils {
         }
     }
 
-    public static <T> T obcj_field(Object object, String fieldName) {
+    public static <T> T objc_field(Object object, String fieldName) {
         try {
             return (T) object.getClass().getDeclaredField(fieldName).get(object);
         } catch (Exception e) {
@@ -280,19 +276,27 @@ public class Utils {
         }
     }
 
-    public static Double _minus(Object obj1, Object obj2) {
+    public static NSRect UnionOfTwoRects(Object obj1, Object obj2) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static Number _uminus(Object obj) {
+        return -((Number) obj).doubleValue();
+    }
+
+    public static Number _minus(Object obj1, Object obj2) {
         return ((Number) obj1).doubleValue() - ((Number) obj2).doubleValue();
     }
 
-    public static Double _plus(Object obj1, Object obj2) {
+    public static Number _plus(Object obj1, Object obj2) {
         return ((Number) obj1).doubleValue() + ((Number) obj2).doubleValue();
     }
 
-    public static Double _divide(Object obj1, Object obj2) {
+    public static Number _divide(Object obj1, Object obj2) {
         return ((Number) obj1).doubleValue() / ((Number) obj2).doubleValue();
     }
 
-    public static Double _multiple(Object obj1, Object obj2) {
+    public static Number _multiple(Object obj1, Object obj2) {
         return ((Number) obj1).doubleValue() / ((Number) obj2).doubleValue();
     }
 

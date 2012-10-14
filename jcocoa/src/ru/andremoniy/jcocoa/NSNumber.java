@@ -14,11 +14,7 @@ public class NSNumber extends NSObject {
         throw new RuntimeException("not implemented");
     }
 
-    public static Object numberWithFloat(float value) {
-        throw new RuntimeException("not implemented");
-    }
-
-    public static Object numberWithFloat(double value) {
+    public static Object numberWithFloat(Object value) {
         throw new RuntimeException("not implemented");
     }
 

@@ -29,4 +29,8 @@ public class NSApp {
     public static NSWindow keyWindow() {
         throw new RuntimeException("not implemented");
     }
+
+    public static void discardEventsMatchingMask(Integer eventMask, NSEvent theEvent) {
+        throw new RuntimeException("not implemented");
+    }
 }

@@ -6,89 +6,101 @@ package ru.andremoniy.jcocoa;
  * Time: 0:06
  */
 public class MathEx {
-    public static double fmodf(Float a1, Float a2) {
+    public static Number fmodf(Float a1, Float a2) {
         return a1 % a2;
     }
 
-    public static double fmodf(double a1, double a2) {
+    public static Number fmodf(double a1, double a2) {
         return a1 % a2;
     }
 
-    public static double fabsf(float value) {
+    public static Number fabsf(Number value) {
+        return Math.abs(value.doubleValue());
+    }
+
+    public static Number fabsf(float value) {
         return Math.abs(value);
     }
 
-    public static double fabsf(double value) {
+    public static Number fabsf(double value) {
         return Math.abs(value);
     }
 
-    public static double atanf(float value) {
+    public static Number atanf(Number value) {
+        return Math.atan(value.doubleValue());
+    }
+
+    public static Number atanf(float value) {
         return Math.atan(value);
     }
 
-    public static Double atanf(double value) {
+    public static Number atanf(double value) {
         return (Double) Math.atan(value);
     }
 
-    public static double AngleBetween2(NSPoint p1, NSPoint p2, NSPoint p3) {
+    public static Number AngleBetween2(NSPoint p1, NSPoint p2, NSPoint p3) {
         throw new RuntimeException("not implemented");
     }
 
-    public static double sinf(float angle) {
+    public static Number sinf(float angle) {
         return Math.sin(angle);
     }
 
-    public static double sinf(double angle) {
+    public static Number sinf(double angle) {
         return Math.sin(angle);
     }
 
-    public static double cosf(float angle) {
+    public static Number cosf(float angle) {
         return Math.cos(angle);
     }
 
-    public static double cosf(double angle) {
+    public static Number cosf(double angle) {
         return Math.cos(angle);
     }
 
-    public static double pi = Math.PI;
+    public static Number pi = Math.PI;
 
-    public static double fabs(double value) {
+    public static Number fabs(double value) {
         return Math.abs(value);
     }
 
-    public static double hypotf(double v1, double v2) {
+    public static Number hypotf(double v1, double v2) {
         throw new RuntimeException("not implemented");
     }
 
-    public static double isinf(double v1) {
+    public static Number isinf(double v1) {
         throw new RuntimeException("not implemented");
     }
 
-    public static double isnan(double v1) {
+    public static Number isnan(double v1) {
         throw new RuntimeException("not implemented");
     }
 
-    public static double sqrtf(double v1) {
+    public static Number sqrtf(double v1) {
         throw new RuntimeException("not implemented");
     }
 
-    public static double hypotf(Object v1, Object v2) {
+    public static Number hypotf(Object v1, Object v2) {
         throw new RuntimeException("not implemented");
     }
 
-    public static double atan2f(double v1, double v2) {
+    public static Number atan2f(double v1, double v2) {
         throw new RuntimeException("not implemented");
     }
 
-    public static double roundtol(float value) {
+    public static Number roundtol(float value) {
         return Math.round(value);
     }
 
-    public static double ceil(float value) {
+    public static Number ceil(float value) {
         return Math.ceil(value);
     }
 
-    public static double ceil(double value) {
+    public static Number ceil(double value) {
         return Math.ceil(value);
+    }
+
+    public static Number Slope(Object p1, Object p2) {
+        throw new RuntimeException("not implemented");
     }
 }
