@@ -26,7 +26,7 @@ public class NSNumber extends NSObject {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSNumber numberWithInt(int i) {
+    public static NSNumber numberWithInt(Object i) {
         throw new RuntimeException("not implemented");
     }
 

@@ -7,4 +7,7 @@ package ru.andremoniy.jcocoa;
  */
 public class NSPredicate {
 
+    public static NSPredicate predicateWithFormat(String format) {
+        throw new RuntimeException("not implemented");
+    }
 }

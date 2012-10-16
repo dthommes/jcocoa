@@ -34,4 +34,8 @@ public class NSObject {
     public static Class classForConversionRequestFor(Class clazz) {
         throw new RuntimeException("not implemented");
     }
+
+    public Object mutableCopy() {
+        throw new RuntimeException("not implemented");
+    }
 }

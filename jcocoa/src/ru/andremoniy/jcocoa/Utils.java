@@ -11,8 +11,6 @@ import java.util.List;
  */
 public class Utils {
 
-    private RuntimeException runtimeException;
-
     public static boolean NSEqualRects(Object obj1, Object obj2) {
         throw new RuntimeException("not implemented");
     }
@@ -125,6 +123,14 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
+    public static NSRect NSRectFromString(Object str) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSPoint LengthenLine(NSPoint p1, NSPoint p2, Number number) {
+        throw new RuntimeException("not implemented");
+    }
+
     public static NSSet DifferenceOfTwoRects(NSRect r1, NSRect r2) {
         throw new RuntimeException("not implemented");
     }
@@ -137,11 +143,11 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSRect NSInsetRect(NSRect rect, Double x, Double y) {
+    public static NSRect NSInsetRect(Object rect, Double x, Double y) {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSRect NSInsetRect(NSRect rect, int x, int y) {
+    public static NSRect NSInsetRect(Object rect, int x, int y) {
         throw new RuntimeException("not implemented");
     }
 
@@ -173,7 +179,11 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static void _NSAssertBody(Boolean condition, String message, int a1, int a2, int a3, int a4, int a5) {
+    public static void _NSAssertBody(Object condition, String message, int a1, int a2, int a3, int a4, int a5) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSRect CentreRectOnPoint(NSRect rect, NSPoint point) {
         throw new RuntimeException("not implemented");
     }
 
@@ -332,9 +342,13 @@ public class Utils {
         return ((Number) obj1).intValue() | ((Number) obj2).intValue();
     }
 
-    public static void _set(Object obj, String fieldName, Object value) {
-        // TODO:
-        throw new RuntimeException("not implemented");
+    public static Object _set(Object obj, String fieldName, Object value) {
+        try {
+            obj.getClass().getField(fieldName).set(obj, value);
+            return value;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static void _setMultiple(Object obj, String fieldName, Object value) {
@@ -419,6 +433,14 @@ public class Utils {
     }
 
     public static String NSStringFromSize(NSSize size) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static Object __CFRangeMake(int n, Object obj) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static void CFArrayApplyFunction(CFArrayRef arrayRef, Object range, Object obj1, Object obj2) {
         throw new RuntimeException("not implemented");
     }
 

@@ -33,4 +33,8 @@ public class NSFileManager {
     public NSDirectoryEnumerator enumeratorAtPath(String path) {
         throw new RuntimeException("not implemented");
     }
+
+    public NSArray contentsOfDirectoryAtPath(String path, Object o) {
+        throw new RuntimeException("not implemented");
+    }
 }

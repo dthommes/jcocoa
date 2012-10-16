@@ -33,4 +33,8 @@ public class NSApp {
     public static void discardEventsMatchingMask(Integer eventMask, NSEvent theEvent) {
         throw new RuntimeException("not implemented");
     }
+
+    public static void beginSheet(NSWindow sheet, NSWindow parent, NSObject delegate, Object o, Object o1) {
+        throw new RuntimeException("not implemented");
+    }
 }

@@ -21,4 +21,8 @@ public class NSValue {
     public static NSValue valueWithRect(NSRect nsRect) {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSValue valueWithBytes(Object obj1, Object obj2) {
+        throw new RuntimeException("not implemented");
+    }
 }

@@ -7,7 +7,7 @@ import java.awt.*;
  * Date: 17.06.12
  * Time: 22:53
  */
-public class NSColor {
+public class NSColor extends NSObject {
 
     public static final Color brown = new Color(0.6f, 0.4f, 0.2f, 1.0f);
     public static final Color clear = new Color(0, 0, 0, 0);
@@ -83,10 +83,14 @@ public class NSColor {
         return new NSColor(new Color(color.getRed(), color.getGreen(), color.getBlue(), (float) ac));
     }
 
-    public static NSColor colorWithCalibratedRed(double r, double g, double b, double a) {
-        return new NSColor(new Color((float) r, (float) g, (float) b, (float) a));
+    public static NSColor colorWithCalibratedRed(Object r, Object g, Object b, Object a) {
+        return new NSColor(new Color((Float) r, (Float) g, (Float) b, (Float) a));
     }
 
+    /*public static NSColor colorWithCalibratedRed(double r, double g, double b, double a) {
+        return new NSColor(new Color((float) r, (float) g, (float) b, (float) a));
+    }
+*/
     public void setStroke() {
         // TODO: установить цвет обводки текущего графическаго интерфейса
     }
@@ -120,6 +124,10 @@ public class NSColor {
     }
 
     public static NSObject colorWithCalibratedWhite(Object floatValue, double v) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSColor colorWithPatternImage(NSImage patternImage) {
         throw new RuntimeException("not implemented");
     }
 }

@@ -58,7 +58,7 @@ public class MathEx {
         return Math.cos(angle);
     }
 
-    public static Number pi = Math.PI;
+    public static Double pi = Math.PI;
 
     public static Number fabs(double value) {
         return Math.abs(value);
