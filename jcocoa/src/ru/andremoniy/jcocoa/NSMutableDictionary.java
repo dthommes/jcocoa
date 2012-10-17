@@ -64,4 +64,8 @@ public class NSMutableDictionary extends NSDictionary {
     public NSDictionary deepCopy() {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSMutableDictionary dictionaryWithDictionary(NSDictionary di) {
+        throw new RuntimeException("not implemented");
+    }
 }

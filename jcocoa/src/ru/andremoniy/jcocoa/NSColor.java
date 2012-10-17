@@ -130,4 +130,12 @@ public class NSColor extends NSObject {
     public static NSColor colorWithPatternImage(NSImage patternImage) {
         throw new RuntimeException("not implemented");
     }
+
+    public void getWhite(Double white, Double alpha) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSColor colorFromPasteboard(NSPasteboard pb) {
+        throw new RuntimeException("not implemented");
+    }
 }

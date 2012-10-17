@@ -15,4 +15,8 @@ public class NSInvocation {
     public Method selector() {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSInvocation invocationWithMethodSignature(Object methodSignatureForSelector) {
+        throw new RuntimeException("not implemented");
+    }
 }

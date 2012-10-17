@@ -27,7 +27,7 @@ public class NSObject {
         throw new RuntimeException("not implemented");
     }
 
-    public NSObject retain() {
+    public <T> T retain() {
         throw new RuntimeException("not implemented");
     }
 

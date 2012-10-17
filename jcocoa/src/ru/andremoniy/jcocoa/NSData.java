@@ -17,4 +17,8 @@ public class NSData extends NSObject {
     public static NSData dataWithContentsOfMappedFile(String filename) {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSData data() {
+        throw new RuntimeException("not implemented");
+    }
 }

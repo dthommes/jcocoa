@@ -6,7 +6,7 @@ package ru.andremoniy.jcocoa;
  * Time: 0:06
  */
 public class MathEx {
-    public static Number fmodf(Float a1, Float a2) {
+    public static Number fmodf(Object a1, Double a2) {
         return a1 % a2;
     }
 
@@ -46,7 +46,7 @@ public class MathEx {
         return Math.sin(angle);
     }
 
-    public static Number sinf(double angle) {
+    public static Number sinf(Number angle) {
         return Math.sin(angle);
     }
 
@@ -54,13 +54,13 @@ public class MathEx {
         return Math.cos(angle);
     }
 
-    public static Number cosf(double angle) {
+    public static Number cosf(Number angle) {
         return Math.cos(angle);
     }
 
     public static Double pi = Math.PI;
 
-    public static Number fabs(double value) {
+    public static Number fabs(Object value) {
         return Math.abs(value);
     }
 
@@ -84,12 +84,12 @@ public class MathEx {
         throw new RuntimeException("not implemented");
     }
 
-    public static Number atan2f(double v1, double v2) {
+    public static Number atan2f(Number v1, Number v2) {
         throw new RuntimeException("not implemented");
     }
 
-    public static Number roundtol(float value) {
-        return Math.round(value);
+    public static Number roundtol(Object value) {
+        return Math.round(((Number)value).doubleValue());
     }
 
     public static Number ceil(float value) {

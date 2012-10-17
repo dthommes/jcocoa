@@ -42,4 +42,8 @@ public class NSUserDefaults {
     public Double floatForKey(String key) {
         throw new RuntimeException("not implemented");
     }
+
+    public void synchronize() {
+        throw new RuntimeException("not implemented");
+    }
 }

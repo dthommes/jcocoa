@@ -53,4 +53,8 @@ public class NSImage extends NSObject {
     public static NSArray imagePasteboardTypes() {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSImage imageResourceNamed(String path) {
+        throw new RuntimeException("not implemented");
+    }
 }

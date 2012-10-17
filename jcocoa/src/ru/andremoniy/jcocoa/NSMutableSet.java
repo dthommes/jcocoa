@@ -6,4 +6,11 @@ package ru.andremoniy.jcocoa;
  * Time: 23:19
  */
 public class NSMutableSet extends NSSet {
+    public static NSMutableSet set() {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSMutableSet setWithArray(NSArray array) {
+        throw new RuntimeException("not implemented");
+    }
 }

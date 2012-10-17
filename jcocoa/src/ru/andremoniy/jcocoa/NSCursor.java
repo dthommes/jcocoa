@@ -5,7 +5,7 @@ package ru.andremoniy.jcocoa;
  * Date: 18.06.12
  * Time: 0:13
  */
-public class NSCursor {
+public class NSCursor extends NSObject {
     public void set() {
         throw new RuntimeException("not implemented");
     }
@@ -43,6 +43,22 @@ public class NSCursor {
     }
 
     public void push() {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSCursor IBeamCursor() {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSCursor disappearingItemCursor() {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSCursor resizeUpDownCursor() {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSCursor resizeLeftRightCursor() {
         throw new RuntimeException("not implemented");
     }
 }

@@ -29,4 +29,8 @@ public class NSSet {
     public NSSet autorelease() {
         return this;
     }
+
+    public static NSSet setWithArray(NSArray array) {
+        throw new RuntimeException("not implemented");
+    }
 }

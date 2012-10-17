@@ -7,6 +7,7 @@ package ru.andremoniy.jcocoa;
  */
 public class NSBezierPath extends NSObject {
 
+    private static Number defaultFlatness;
 
     public int length() {
         throw new RuntimeException("not implemented");
@@ -170,5 +171,37 @@ public class NSBezierPath extends NSObject {
 
     public static NSLayoutManager textOnPathLayoutManager() {
         throw new RuntimeException("not implemented");
+    }
+
+    public static Number defaultLineWidth() {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static void setDefaultLineWidth(Double lineWidth) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static void strokeRect(Object pageDimension) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static void strokeLineFromPoint(NSPoint a, NSPoint b) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static Object pathUnflatteningPolicy() {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSBezierPath bezierPathWithStandardChainLinkFromPoint(NSPoint pa, NSPoint pb) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static void setDefaultFlatness(double flatness) {
+        defaultFlatness = new Double(flatness);
+    }
+
+    public static Number defaultFlatness() {
+        return defaultFlatness;
     }
 }

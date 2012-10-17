@@ -37,4 +37,8 @@ public class NSApp {
     public static void beginSheet(NSWindow sheet, NSWindow parent, NSObject delegate, Object o, Object o1) {
         throw new RuntimeException("not implemented");
     }
+
+    public static void endSheet(NSWindow sheet) {
+        throw new RuntimeException("not implemented");
+    }
 }

@@ -34,7 +34,7 @@ public class NSNumber extends NSObject {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSNumber numberWithDouble(double v) {
+    public static NSNumber numberWithDouble(Number v) {
         throw new RuntimeException("not implemented");
     }
 }

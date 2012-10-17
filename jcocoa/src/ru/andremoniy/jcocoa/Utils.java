@@ -91,7 +91,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static boolean NSEqualPoints(NSPoint point1, NSPoint point2) {
+    public static boolean NSEqualPoints(Object point1, Object point2) {
         throw new RuntimeException("not implemented");
     }
 
@@ -107,7 +107,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static boolean NSMouseInRect(NSPoint point, NSRect rect, boolean isFlipped) {
+    public static boolean NSMouseInRect(NSPoint point, Object rect, Object isFlipped) {
         throw new RuntimeException("not implemented");
     }
 
@@ -143,7 +143,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSRect NSInsetRect(Object rect, Double x, Double y) {
+    public static NSRect NSInsetRect(Object rect, Number x, Number y) {
         throw new RuntimeException("not implemented");
     }
 
@@ -163,11 +163,11 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSRect NSOffsetRect(NSRect rect, double v1, double v2) {
+    public static NSRect NSOffsetRect(NSRect rect, Number v1, Number v2) {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSRect NSUnionRect(NSRect rect1, NSRect rect2) {
+    public static NSRect NSUnionRect(NSRect rect1, Object rect2) {
         throw new RuntimeException("not implemented");
     }
 
@@ -184,6 +184,50 @@ public class Utils {
     }
 
     public static NSRect CentreRectOnPoint(NSRect rect, NSPoint point) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSRect ScaleRect(Object rect, double v) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static boolean AreSimilarRects(Object rect1, Object rect2, double v) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static Number NSWidth(NSRect rect) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static Number NSHeight(NSRect rect) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static SEL NSSelectorFromString(Object obj) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSString NSStringFromSelector(Object obj) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSRect NormalizedRect(Object obj) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static Integer strcmp(Object str1, Object str2) {
+        return ((String) str1).compareTo((String) str2);
+    }
+
+    public static NSString NSStringFromRect(Object rect) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSSize NSSizeFromString(Object str) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSPoint NSPointFromString(Object str) {
         throw new RuntimeException("not implemented");
     }
 
@@ -340,6 +384,14 @@ public class Utils {
 
     public static Integer _or(Object obj1, Object obj2) {
         return ((Number) obj1).intValue() | ((Number) obj2).intValue();
+    }
+
+    public static Integer _xor(Object obj1, Object obj2) {
+        return ((Number) obj1).intValue() ^ ((Number) obj2).intValue();
+    }
+
+    public static Integer _percent(Object obj1, Object obj2) {
+        return ((Number) obj1).intValue() % ((Number) obj2).intValue();
     }
 
     public static Object _set(Object obj, String fieldName, Object value) {
