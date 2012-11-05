@@ -7,11 +7,11 @@ package ru.andremoniy.jcocoa;
  */
 public class MathEx {
     public static Number fmodf(Object a1, Double a2) {
-        return a1 % a2;
+        return ((Number)a1).intValue() % ((Number)a2).intValue();
     }
 
-    public static Number fmodf(double a1, double a2) {
-        return a1 % a2;
+    public static Number fmodf(Object a1, Object a2) {
+        return ((Number)a1).intValue() % ((Number)a2).intValue();
     }
 
     public static Number fabsf(Number value) {
@@ -35,7 +35,7 @@ public class MathEx {
     }
 
     public static Number atanf(double value) {
-        return (Double) Math.atan(value);
+        return Math.atan(value);
     }
 
     public static Number AngleBetween2(NSPoint p1, NSPoint p2, NSPoint p3) {
@@ -46,8 +46,20 @@ public class MathEx {
         return Math.sin(angle);
     }
 
+    public static Number cos(Number angle) {
+        return Math.sin(angle.doubleValue());
+    }
+
+    public static Number sin(Number angle) {
+        return Math.sin(angle.doubleValue());
+    }
+
+    public static Number pow(Number arg1, Number arg2) {
+        return Math.pow(arg1.doubleValue(), arg2.doubleValue());
+    }
+
     public static Number sinf(Number angle) {
-        return Math.sin(angle);
+        return Math.sin(angle.doubleValue());
     }
 
     public static Number cosf(float angle) {
@@ -55,13 +67,17 @@ public class MathEx {
     }
 
     public static Number cosf(Number angle) {
-        return Math.cos(angle);
+        return Math.cos(angle.doubleValue());
+    }
+
+    public static Number tanf(Number angle) {
+        return Math.tan(angle.doubleValue());
     }
 
     public static Double pi = Math.PI;
 
     public static Number fabs(Object value) {
-        return Math.abs(value);
+        return Math.abs(((Number)value).doubleValue());
     }
 
     public static Number hypotf(double v1, double v2) {

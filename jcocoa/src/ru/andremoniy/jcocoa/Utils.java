@@ -195,11 +195,11 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static Number NSWidth(NSRect rect) {
+    public static Number NSWidth(Object rect) {
         throw new RuntimeException("not implemented");
     }
 
-    public static Number NSHeight(NSRect rect) {
+    public static Number NSHeight(Object rect) {
         throw new RuntimeException("not implemented");
     }
 
@@ -207,7 +207,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSString NSStringFromSelector(Object obj) {
+    public static String NSStringFromSelector(Object obj) {
         throw new RuntimeException("not implemented");
     }
 
@@ -219,7 +219,7 @@ public class Utils {
         return ((String) str1).compareTo((String) str2);
     }
 
-    public static NSString NSStringFromRect(Object rect) {
+    public static String NSStringFromRect(Object rect) {
         throw new RuntimeException("not implemented");
     }
 
@@ -494,6 +494,10 @@ public class Utils {
 
     public static void CFArrayApplyFunction(CFArrayRef arrayRef, Object range, Object obj1, Object obj2) {
         throw new RuntimeException("not implemented");
+    }
+
+    public static Boolean _instanceof(Object object, Class clazz) {
+        return clazz.isInstance(object);
     }
 
 }

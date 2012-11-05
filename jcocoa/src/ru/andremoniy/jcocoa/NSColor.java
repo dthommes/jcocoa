@@ -138,4 +138,20 @@ public class NSColor extends NSObject {
     public static NSColor colorFromPasteboard(NSPasteboard pb) {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSColor rgbBlack() {
+        return new NSColor(Color.black);
+    }
+
+    public static NSColor rgbWhite() {
+        return new NSColor(Color.white);
+    }
+
+    public void getRed(Double red, Double green, Double blue, Double alpha) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static NSColor colorWithCalibratedHue(Double hue, Double sat, Object brightness, double v) {
+        throw new RuntimeException("not implemented");
+    }
 }
