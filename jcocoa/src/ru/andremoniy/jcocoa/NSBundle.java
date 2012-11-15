@@ -22,4 +22,12 @@ public class NSBundle {
     public String localizedStringForKey(String key, String message, Object obj) {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSBundle bundleForClass(Class _class) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public String pathForImageResource(String name) {
+        throw new RuntimeException("not implemented");
+    }
 }

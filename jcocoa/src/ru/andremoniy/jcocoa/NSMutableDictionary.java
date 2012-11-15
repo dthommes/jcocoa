@@ -68,4 +68,8 @@ public class NSMutableDictionary extends NSDictionary {
     public static NSMutableDictionary dictionaryWithDictionary(NSDictionary di) {
         throw new RuntimeException("not implemented");
     }
+
+    public static NSMutableDictionary dictionaryWithCapacity(int capacity) {
+        throw new RuntimeException("not implemented");
+    }
 }

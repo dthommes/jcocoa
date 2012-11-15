@@ -6,4 +6,7 @@ package ru.andremoniy.jcocoa;
  * Time: 1:44
  */
 public class NSMutableString extends NSObject {
+    public static NSMutableString stringWithString(String start) {
+        throw new RuntimeException("not implemented");
+    }
 }

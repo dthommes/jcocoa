@@ -100,7 +100,7 @@ public class MathEx {
         throw new RuntimeException("not implemented");
     }
 
-    public static Number atan2f(Number v1, Number v2) {
+    public static Number atan2f(Object v1, Object v2) {
         throw new RuntimeException("not implemented");
     }
 

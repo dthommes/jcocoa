@@ -1,8 +1,12 @@
 package ru.andremoniy.jcocoa;
 
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSGeometry;
+
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.util.List;
+
+import static ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSGeometry.*;
 
 /**
  * User: 1
@@ -95,8 +99,8 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static void NSAssert(boolean condition, String msg) {
-        assert condition : msg;
+    public static void NSAssert(Object condition, String msg) {
+        assert (Boolean)condition : msg;
     }
 
     public static NSRect NSRectFromTwoPoints(Object p1, Object p2) {
@@ -151,7 +155,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSRange NSMakeRange(int i1, int i2) {
+    public static NSRange NSMakeRange(Object i1, Object i2) {
         throw new RuntimeException("not implemented");
     }
 
@@ -171,7 +175,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSRect NSIntersectionRect(NSRect rect1, NSRect rect2) {
+    public static NSRect NSIntersectionRect(Object rect1, Object rect2) {
         throw new RuntimeException("not implemented");
     }
 
@@ -288,6 +292,10 @@ public class Utils {
     }
 
     public static SEL _protocol_(String name) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static SEL _encode_(String name) {
         throw new RuntimeException("not implemented");
     }
 
@@ -498,6 +506,10 @@ public class Utils {
 
     public static Boolean _instanceof(Object object, Class clazz) {
         return clazz.isInstance(object);
+    }
+
+    public static Boolean _instanceof(Object object, Object classObj) {
+        return classObj.getClass().isInstance(object);
     }
 
 }

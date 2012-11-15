@@ -7,13 +7,4 @@ package ru.andremoniy.jcocoa;
  */
 public class Constants {
 
-    public static NSRect NSZeroRect = new NSRect();
-    public static NSSize NSZeroSize = new NSSize();
-    public static NSPoint NSZeroPoint = new NSPoint();
-
-    public static NSEvent kInfoEvent = new NSEvent(); // TODO:
-    public static NSEvent kReactiveEvent = new NSEvent(); // TODO:
-    public static NSEvent kUserEvent = new NSEvent(); // TODO:
-    public static NSEvent kStateEvent = new NSEvent(); // TODO:
-
 }

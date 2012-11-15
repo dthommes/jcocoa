@@ -15,7 +15,7 @@ public class NSUserDefaults {
         throw new RuntimeException("not implemented");
     }
 
-    public void setBool(boolean value, String key) {
+    public void setBool(Object value, String key) {
         throw new RuntimeException("not implemented");
     }
 

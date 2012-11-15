@@ -6,4 +6,7 @@ package ru.andremoniy.jcocoa;
  * Time: 20:18
  */
 public class NSParagraphStyle extends NSObject {
+    public static NSParagraphStyle defaultParagraphStyle() {
+        throw new RuntimeException("not implemented");
+    }
 }
