@@ -9,4 +9,12 @@ public class NSPoint {
 
     public Double x;
     public Double y;
+
+    public NSPoint() {
+    }
+
+    public NSPoint(Number x, Number y) {
+        this.x = x.doubleValue();
+        this.y = y.doubleValue();
+    }
 }

@@ -119,4 +119,12 @@ public class MathEx {
     public static Number Slope(Object p1, Object p2) {
         throw new RuntimeException("not implemented");
     }
+
+    public static Double hypot(Object t1, Object t2) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static Number floor(Number f) {
+        return Math.floor((Double) f);
+    }
 }

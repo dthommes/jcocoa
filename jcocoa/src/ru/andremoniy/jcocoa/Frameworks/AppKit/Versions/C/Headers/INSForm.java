@@ -1,0 +1,52 @@
+package ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers;
+
+import ru.andremoniy.jcocoa.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFont;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFont.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFont;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFont.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFont;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFont.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFont;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFont.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFormCell;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFormCell.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFormCell;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSFormCell.*;
+
+public abstract class INSForm extends NSMatrix {
+	public Integer indexOfSelectedItem() { return null;
+};
+	public void setEntryWidth(Double width) { return ;
+};
+	public void setInterlineSpacing(Double spacing) { return ;
+};
+	public void setBordered(Boolean flag) { return ;
+};
+	public void setBezeled(Boolean flag) { return ;
+};
+	public void setTitleAlignment(NSTextAlignment mode) { return ;
+};
+	public void setTextAlignment(NSTextAlignment mode) { return ;
+};
+	public void setTitleFont(NSFont fontObj) { return ;
+};
+	public void setTextFont(NSFont fontObj) { return ;
+};
+	public NSObject cellAtIndex(Integer index) { return null;
+};
+	public void drawCellAtIndex(Integer index) { return ;
+};
+	public NSFormCell addEntry(String title) { return null;
+};
+	public NSFormCell insertEntry(String title, Integer index) { return null;
+};
+	public void removeEntryAtIndex(Integer index) { return ;
+};
+	public Integer indexOfCellWithTag(Integer aTag) { return null;
+};
+	public void selectTextAtIndex(Integer index) { return ;
+};
+	public void setFrameSize(NSSize newSize) { return ;
+};
+}

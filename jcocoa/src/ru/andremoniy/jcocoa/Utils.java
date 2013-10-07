@@ -1,12 +1,15 @@
 package ru.andremoniy.jcocoa;
 
-import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSGeometry;
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSRange;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.List;
 
-import static ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSGeometry.*;
+import static ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSGeometry.NSRect;
 
 /**
  * User: 1
@@ -59,6 +62,10 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
+    public static void NSLog(String msg, Object obj, String txt) {
+        throw new RuntimeException("not implemented");
+    }
+
     public static void NSLog(String msg, Object obj) {
         throw new RuntimeException("not implemented");
     }
@@ -100,7 +107,7 @@ public class Utils {
     }
 
     public static void NSAssert(Object condition, String msg) {
-        assert (Boolean)condition : msg;
+        assert (Boolean) condition : msg;
     }
 
     public static NSRect NSRectFromTwoPoints(Object p1, Object p2) {
@@ -155,7 +162,7 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSRange NSMakeRange(Object i1, Object i2) {
+    public static INSRange.NSRange NSMakeRange(Object i1, Object i2) {
         throw new RuntimeException("not implemented");
     }
 
@@ -235,27 +242,14 @@ public class Utils {
         throw new RuntimeException("not implemented");
     }
 
-    public static enum NSBezierPathElementEnum {
-        NSMoveToBezierPathElement,
-        NSLineToBezierPathElement,
-        NSCurveToBezierPathElement,
-        NSClosePathBezierPathElement
-    }
-
-    public static enum kDKArcPathEnum {
-        kDKArcPathRadiusPart,
-        kDKArcPathStartAnglePart,
-        kDKArcPathEndAnglePart,
-        kDKArcPathRotationKnobPart
-    }
-
     public static <T extends Enum> T getEnum(Object obj) {
+/*
         switch (obj.getClass().getName()) {
-            case "NSBezierPathElement":
-                return (T) NSBezierPathElementEnum.valueOf(obj.toString());
-//            case "Integer":
-//                return kDKArcPathEnum;
+            // TODO:
+            case "Integer":
+                return kDKArcPathEnum;
         }
+*/
         return null;
     }
 
@@ -288,7 +282,7 @@ public class Utils {
     }
 
     public static SEL _selector_(String name) {
-        throw new RuntimeException("not implemented");
+        return new SEL(name);
     }
 
     public static SEL _protocol_(String name) {
@@ -301,13 +295,68 @@ public class Utils {
 
     public static <T> T objc_msgSend(Object object, String methodName, List<String> categories, Object... msgList) {
         try {
+            methodName = methodName.trim();
             // TODO: using categories
             Class[] classes = new Class[msgList.length];
             for (int i = 0, msgListLength = msgList.length; i < msgListLength; i++) {
                 Object msg = msgList[i];
-                classes[i] = msg.getClass();
+                if (msg == null) {
+                    classes[i] = Object.class;
+                } else {
+                    classes[i] = msg.getClass();
+                }
             }
-            return (T) object.getClass().getMethod(methodName, classes).invoke(object, msgList);
+            boolean staticMethod = object instanceof Class;
+            Object originalObject = object;
+            if (staticMethod) object = ((Class) object).newInstance();
+
+            Method method = null;
+
+            try {
+                method = object.getClass().getMethod(methodName, classes);
+            } catch (NoSuchMethodException e) {
+                if (staticMethod) {
+                    classes = Arrays.copyOf(classes, classes.length + 1);
+                    classes[classes.length - 1] = Class.class;
+                    method = object.getClass().getMethod(methodName, classes);
+                    msgList = Arrays.copyOf(msgList, msgList.length + 1);
+                    msgList[msgList.length - 1] = originalObject;
+                    // todo: catch NoSuchMethodException
+                } else {
+                    methods:
+                    for (Method m : object.getClass().getDeclaredMethods()) {
+                        if (m.getName().equals(methodName)) {
+                            Class<?>[] parameterTypes = m.getParameterTypes();
+                            for (int i = 0; i < parameterTypes.length; i++) {
+                                Class<?> pc = parameterTypes[i];
+                                Class<?> msgItemClass = msgList[i].getClass();
+                                if (msgItemClass == Integer.class && pc == Double.class) {
+                                    msgList[i] = new Double((Integer)msgList[i]);
+                                    continue;
+                                }
+                                if (msgItemClass != pc && !msgItemClass.isAssignableFrom(pc) && !pc.isAssignableFrom(msgItemClass))
+                                    continue methods;
+                                msgList[i] = pc.cast(msgList[i]);
+                            }
+
+                            method = m;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            if (method == null) throw new RuntimeException("unknown method [" + methodName + "]");
+
+            return (T) method.invoke(object, msgList);
+        } catch (NSException e) {
+            throw e;
+        } catch (InvocationTargetException e) {
+            if (e.getTargetException() instanceof NSException)
+                throw (NSException) e.getTargetException();
+            if (e.getTargetException() instanceof RuntimeException)
+                throw (RuntimeException) e.getTargetException();
+            throw new RuntimeException(e.getTargetException());
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -315,7 +364,7 @@ public class Utils {
 
     public static <T> T objc_field(Object object, String fieldName) {
         try {
-            return (T) object.getClass().getDeclaredField(fieldName).get(object);
+            return (T) object.getClass().getField(fieldName.replaceAll("\\s+", "")).get(object);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -343,23 +392,29 @@ public class Utils {
     }
 
     public static Number _uminus(Object obj) {
-        return -((Number) obj).doubleValue();
+        return castNumbers(obj, null, -((Number) obj).doubleValue());
     }
 
     public static Number _minus(Object obj1, Object obj2) {
-        return ((Number) obj1).doubleValue() - ((Number) obj2).doubleValue();
+        return castNumbers(obj1, obj2, ((Number) obj1).doubleValue() - ((Number) obj2).doubleValue());
     }
 
     public static Number _plus(Object obj1, Object obj2) {
-        return ((Number) obj1).doubleValue() + ((Number) obj2).doubleValue();
+        return castNumbers(obj1, obj2, (((Number) obj1).doubleValue() + ((Number) obj2).doubleValue()));
+    }
+
+    private static Number castNumbers(Object obj1, Object obj2, Double v) {
+        if (obj1 instanceof Double || obj2 instanceof Double) return v;
+        if (obj1 instanceof Long || obj2 instanceof Long) return v.longValue();
+        return v.intValue();
     }
 
     public static Number _divide(Object obj1, Object obj2) {
-        return ((Number) obj1).doubleValue() / ((Number) obj2).doubleValue();
+        return castNumbers(obj1, obj2, (((Number) obj1).doubleValue() / ((Number) obj2).doubleValue()));
     }
 
     public static Number _multiple(Object obj1, Object obj2) {
-        return ((Number) obj1).doubleValue() / ((Number) obj2).doubleValue();
+        return castNumbers(obj1, obj2, ((Number) obj1).doubleValue() / ((Number) obj2).doubleValue());
     }
 
     public static boolean _more(Object obj1, Object obj2) {
@@ -400,6 +455,14 @@ public class Utils {
 
     public static Integer _percent(Object obj1, Object obj2) {
         return ((Number) obj1).intValue() % ((Number) obj2).intValue();
+    }
+
+    public static Integer _shiftRight(Object obj1, Object obj2) {
+        return ((Number) obj1).intValue() >> ((Number) obj2).intValue();
+    }
+
+    public static Integer _shiftLeft(Object obj1, Object obj2) {
+        return ((Number) obj1).intValue() << ((Number) obj2).intValue();
     }
 
     public static Object _set(Object obj, String fieldName, Object value) {
@@ -512,7 +575,23 @@ public class Utils {
         return classObj.getClass().isInstance(object);
     }
 
+    public static void free(Object obj) {
+        // do nothing.
+    }
+
+    public static int sizeof(Object obj) {
+        throw new RuntimeException("not implemented");
+    }
+
+    public static void printf(String format, Object... args) {
+        // todo: what to do with "_"?
+        format = format.replace("%_", "%");
+
+        format = format.replace("%i", "%d");
+        System.out.printf(format, args);
+    }
 }
+
 
 
 

@@ -1,5 +1,7 @@
 package ru.andremoniy.jcocoa;
 
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSGeometry;
+
 /**
  * User: Andremoniy
  * Date: 17.06.12
@@ -81,7 +83,7 @@ public class NSBezierPath extends NSObject {
         throw new RuntimeException("not implemented");
     }
 
-    public NSRect bounds() {
+    public INSGeometry.NSRect bounds() {
         throw new RuntimeException("not implemented");
     }
 
@@ -93,7 +95,7 @@ public class NSBezierPath extends NSObject {
         throw new RuntimeException("not implemented");
     }
 
-    public static void clipRect(NSRect rect) {
+    public static void clipRect(INSGeometry.NSRect rect) {
         throw new RuntimeException("not implemented");
     }
 
@@ -157,15 +159,15 @@ public class NSBezierPath extends NSObject {
         throw new RuntimeException("not implemented");
     }
 
-    public static Object bezierPathWithCropMarksForRect(NSRect rect, int i, Double amount) {
+    public static Object bezierPathWithCropMarksForRect(INSGeometry.NSRect rect, int i, Double amount) {
         throw new RuntimeException("not implemented");
     }
 
-    public static Object bezierPathWithCropMarksForRect(NSRect rect, Double amount) {
+    public static Object bezierPathWithCropMarksForRect(INSGeometry.NSRect rect, Double amount) {
         throw new RuntimeException("not implemented");
     }
 
-    public static NSBezierPath bezierPathWithOvalInRect(NSRect rect) {
+    public static NSBezierPath bezierPathWithOvalInRect(INSGeometry.NSRect rect) {
         throw new RuntimeException("not implemented");
     }
 

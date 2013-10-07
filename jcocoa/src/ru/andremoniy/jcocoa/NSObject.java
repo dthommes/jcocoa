@@ -1,5 +1,9 @@
 package ru.andremoniy.jcocoa;
 
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSZone;
+
+import java.lang.reflect.Method;
+
 /**
  * User: 1
  * Date: 17.08.12
@@ -7,8 +11,19 @@ package ru.andremoniy.jcocoa;
  */
 public class NSObject {
 
+    public Boolean isMemberOfClass(Class _class) {
+        return _class.getName().equals(this.getClass().getName());
+    }
+
     public Boolean respondsToSelector(SEL sel) {
-        throw new RuntimeException("not implemented");
+        for (Method method : this.getClass().getMethods())
+            if (method.getName().equals(sel.getMethodName())) return true;
+
+        return false;
+    }
+
+    public Boolean instancesRespondToSelector(SEL sel) {
+        return respondsToSelector(sel);
     }
 
     public Boolean respondsToSelector(String selName) {
@@ -23,7 +38,7 @@ public class NSObject {
         throw new RuntimeException("not implemented");
     }
 
-    public Object allocWithZone(NSZone zone) {
+    public Object allocWithZone(INSZone.NSZone zone) {
         throw new RuntimeException("not implemented");
     }
 

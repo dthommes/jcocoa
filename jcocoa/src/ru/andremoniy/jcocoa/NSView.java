@@ -1,5 +1,7 @@
 package ru.andremoniy.jcocoa;
 
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSGeometry;
+
 /**
  * User: 1
  * Date: 17.08.12
@@ -8,7 +10,7 @@ package ru.andremoniy.jcocoa;
 public class NSView extends NSObject {
     private boolean flipped;
 
-    public boolean needsToDrawRect(NSRect rect) {
+    public boolean needsToDrawRect(INSGeometry.NSRect rect) {
         throw new RuntimeException("not implemented");
     }
 

@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Date: 17.06.12
  * Time: 23:57
  */
-public class NSMutableArray extends NSArray {
+public abstract class NSMutableArray extends NSArray {
 
     private ArrayList list = new ArrayList();
 

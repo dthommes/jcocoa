@@ -1,5 +1,7 @@
 package ru.andremoniy.jcocoa;
 
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSRulerView;
+
 /**
  * User: Andremoniy
  * Date: 18.06.12

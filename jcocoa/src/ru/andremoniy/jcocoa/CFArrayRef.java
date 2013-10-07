@@ -5,7 +5,7 @@ package ru.andremoniy.jcocoa;
  * Date: 12.09.12
  * Time: 20:07
  */
-public class CFArrayRef extends NSArray {
+public abstract class CFArrayRef extends NSArray {
     @Override
     public Object lastObject() {
         throw new RuntimeException("not implemented");

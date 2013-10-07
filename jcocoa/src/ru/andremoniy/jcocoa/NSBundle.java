@@ -27,6 +27,10 @@ public class NSBundle {
         throw new RuntimeException("not implemented");
     }
 
+    public static NSBundle bundleForClass(Object obj) {
+        return bundleForClass(obj.getClass());
+    }
+
     public String pathForImageResource(String name) {
         throw new RuntimeException("not implemented");
     }

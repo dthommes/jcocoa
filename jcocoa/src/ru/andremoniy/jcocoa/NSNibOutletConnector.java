@@ -1,6 +1,8 @@
 package ru.andremoniy.jcocoa;
 
 import ru.andremoniy.jcocoa.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSNibOutletConnector;
+
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;

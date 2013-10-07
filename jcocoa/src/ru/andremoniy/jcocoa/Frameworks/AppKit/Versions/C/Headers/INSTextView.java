@@ -1,0 +1,154 @@
+package ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers;
+
+import ru.andremoniy.jcocoa.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSEvent;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSEvent.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSEvent;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSEvent.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSKeyValueCoding.INSArray;
+import static ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSKeyValueCoding.INSArray.*;
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSPathUtilities.INSArray;
+import static ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSPathUtilities.INSArray.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSPasteboard;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSPasteboard.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSPasteboard;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSPasteboard.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSRange;
+import static ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSRange.*;
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSRange;
+import static ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSRange.*;
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSRange;
+import static ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSRange.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSRange;
+import static ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSRange.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSEvent;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSEvent.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSEvent;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSEvent.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView;
+import static ru.andremoniy.jcocoa.Frameworks.AppKit.Versions.C.Headers.INSTextView.*;
+import ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSUndoManager;
+import static ru.andremoniy.jcocoa.Frameworks.Foundation.Versions.C.Headers.INSUndoManager.*;
+
+public abstract class INSTextView {
+	public void toggleBaseWritingDirection(NSObject sender) { return ;
+};
+	public abstract class NSTextViewDelegate {
+	
+}
+public static Integer NSSelectByCharacter = 0;
+public static Integer NSSelectByWord = 1;
+public static Integer NSSelectByParagraph = 2;
+
+	public static class NSSelectionGranularity extends NSUInteger { }public static Integer NSSelectionAffinityUpstream = 0;
+public static Integer NSSelectionAffinityDownstream = 1;
+
+	public static class NSSelectionAffinity extends NSUInteger { }public static Integer NSFindPanelActionShowFindPanel = 1;
+public static Integer NSFindPanelActionNext = 2;
+public static Integer NSFindPanelActionPrevious = 3;
+public static Integer NSFindPanelActionReplaceAll = 4;
+public static Integer NSFindPanelActionReplace = 5;
+public static Integer NSFindPanelActionReplaceAndFind = 6;
+public static Integer NSFindPanelActionSetFindString = 7;
+public static Integer NSFindPanelActionReplaceAllInSelection = 8;
+
+	public static class NSFindPanelAction extends NSUInteger { }	public static String NSFindPanelSearchOptionsPboardType;
+	public static String NSFindPanelCaseInsensitiveSearch;
+	public static String NSFindPanelSubstringMatch;
+public static Integer NSFindPanelSubstringMatchTypeContains = 0;
+public static Integer NSFindPanelSubstringMatchTypeStartsWith = 1;
+public static Integer NSFindPanelSubstringMatchTypeFullWord = 2;
+public static Integer NSFindPanelSubstringMatchTypeEndsWith = 3;
+
+	public static class NSFindPanelSubstringMatchType extends NSUInteger { }	public static String NSAllRomanInputSourcesLocaleIdentifier;
+	public abstract class NSTextViewDelegate {
+	public Boolean textView(NSTextView textView, NSObject link, Integer charIndex) { return null;
+};
+	public void textView(NSTextView textView, NSObject cell, NSRect cellFrame, Integer charIndex) { return ;
+};
+	public void textView(NSTextView textView, NSObject cell, NSRect cellFrame, Integer charIndex) { return ;
+};
+	public void textView(NSTextView view, NSObject cell, NSRect rect, NSEvent event, Integer charIndex) { return ;
+};
+	public NSArray textView(NSTextView view, NSObject cell, Integer charIndex) { return null;
+};
+	public Boolean textView(NSTextView view, NSObject cell, Integer charIndex, NSPasteboard pboard, String type) { return null;
+};
+	public NSRange textView(NSTextView textView, NSRange oldSelectedCharRange, NSRange newSelectedCharRange) { return null;
+};
+	public void textViewDidChangeSelection(NSNotification notification) { return ;
+};
+	public Boolean textView(NSTextView textView, NSRange affectedCharRange, String replacementString) { return null;
+};
+	public Boolean textView(NSTextView textView, SEL commandSelector) { return null;
+};
+	public Boolean textView(NSTextView textView, NSObject link) { return null;
+};
+	public void textView(NSTextView textView, NSObject cell, NSRect cellFrame) { return ;
+};
+	public void textView(NSTextView textView, NSObject cell, NSRect cellFrame) { return ;
+};
+	public void textView(NSTextView view, NSObject cell, NSRect rect, NSEvent event) { return ;
+};
+	public NSUndoManager undoManagerForTextView(NSTextView view) { return null;
+};
+	
+}
+	public static String NSTextViewWillChangeNotifyingTextViewNotification;
+	public static String NSTextViewDidChangeSelectionNotification;
+	public static String NSTextViewDidChangeTypingAttributesNotification;
+}
